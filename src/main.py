@@ -11,5 +11,5 @@ if dm.DisplayOrientation == con.DMDO_90:
 elif dm.DisplayOrientation == con.DMDO_DEFAULT:
     dm.DisplayOrientation = con.DMDO_90
 dm.PelsWidth, dm.PelsHeight = dm.PelsHeight, dm.PelsWidth
-x()
+
 v = win32api.ChangeDisplaySettingsEx(device.DeviceName, dm)
